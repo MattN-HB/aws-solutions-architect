@@ -44,19 +44,23 @@ are not possible.
 </details>
 <details>
   <summary>Domain 2: Define Performant Architectures 28%</summary>
+
 2.1 Identify elastic and scalable compute solutions for a workload
 * Select the appropriate instance(s) based on compute, storage, and networking requirements.
 * Choose the appropriate architecture and services that scale to meet performance
 requirements.
 * Identify metrics to monitor the performance of the solution.
+
 2.2 Select high-performing and scalable storage solutions for a workload
 * Select a storage service and configuration that meets performance demands.
 * Determine storage services that can scale to accommodate future needs.
+
 2.3 Select high-performing networking solutions for a workload
 * Select appropriate AWS connectivity options to meet performance demands.
 * Select appropriate features to optimize connectivity to AWS public services.
 * Determine an edge caching strategy to provide performance benefits.
 * Select appropriate data transfer service for migration and/or ingestion.
+
 2.4 Choose high-performing database solutions for a workload
 * Select an appropriate database scaling strategy.
 * Determine when database caching is required for performance improvement.
@@ -64,6 +68,7 @@ requirements.
 </details>
 <details>
   <summary>Domain 3: Specify Secure Applications and Architectures 24%</summary>
+
 3.1 Design secure access to AWS resources
 * Determine when to choose between users, groups, and roles.
 * Interpret the net effect of a given access policy.
@@ -71,6 +76,7 @@ requirements.
 * Determine ways to secure credentials using features of AWS IAM.
 * Determine the secure method for an application to access AWS APIs.
 * Select appropriate services to create traceability for access to AWS resources.
+
 3.2 Design secure application tiers
 * Given traffic control requirements, determine when and how to use security groups and
 network ACLs.
@@ -78,12 +84,14 @@ network ACLs.
 * Select the appropriate routing mechanism to securely access AWS service endpoints or
 internet-based resources from Amazon VPC.
 * Select appropriate AWS services to protect applications from external threats.
+
 3.3 Select appropriate data security options
 * Determine the policies that need to be applied to objects based on access patterns.
 * Select appropriate encryption options for data at rest and in transit for
 </details>
 <details>
   <summary>Domain 4: Design Cost-Optimized Architectures 18%</summary>
+
 4.1 Identify cost-effective storage solutions
 * Determine the most cost-effective data storage options based on requirements.
 * Apply automated processes to ensure that data over time is stored on storage tiers that
@@ -93,6 +101,7 @@ minimize costs.
 ## Areas Covered
 <details>
   <summary>Types</summary>
+
 * Compute
 * Cost management
 * Database
@@ -107,6 +116,7 @@ minimize costs.
 </details>
 <details>
   <summary>AWS Services and Features</summary>
+
 Analytics:
 * Amazon Athena
 * Amazon Elasticsearch Service (Amazon ES)
@@ -181,6 +191,7 @@ Security, Identity, and Compliance:
 * AWS Shield
 * AWS Single Sign-On
 * AWS WAF
+
 Storage:
 * Amazon Elastic Block Store (Amazon EBS)
 * Amazon Elastic File System (Amazon EFS)
