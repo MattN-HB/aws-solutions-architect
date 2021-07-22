@@ -200,6 +200,17 @@ Storage:
 * Multiple-choice: Has one correct response and three incorrect responses (distractors).
 * Multiple-response: Has two or more correct responses out of five or more options
 
+## CLI Helpful Commands
+<details>
+  <summary>Expand</summary>
+  
+* ```aws configure```
+* ```aws s3 cp <path> s3://<bucket>```
+* ```aws s3 ls```
+* List Bucket Content: ```aws s3 ls s3://<bucket>```
+* grab your environment variables from cli ```env | grep ^AWS```
+* What is the policies attached to that user ```aws iam list-attached-user-policies --user-name=$AWS_ACCOUNT_USERNAME```
+ </details>
 
 ## Resources
 * [AWS Whitepapers](http://aws.amazon.com/whitepapers/)
@@ -212,14 +223,3 @@ Storage:
 * [All Official AWS Cert Past Exams](https://aws.psiexams.com/#/dashboard/compact-dashboard)
 * [AWS Cert Prep Center](https://aws.amazon.com/certification/certification-prep/?cta=saa_examprep)
 * [All FAQs](https://aws.amazon.com/faqs/?ep=sec&sec=assoc_saa)
-
-## CLI Helpful Commands
-<details>
-  <summary>Expand</summary>
-  
-* ```aws configure```
-* ```aws s3 cp <path> s3://<bucket>```
-* ```aws s3 ls```
-* List Bucket Content: ```aws s3 ls s3://<bucket>```
-* grab your environment variables from cli ```env | grep ^AWS```
-* What is the policies attached to that user ```aws iam list-attached-user-policies --user-name=$AWS_ACCOUNT_USERNAME```
