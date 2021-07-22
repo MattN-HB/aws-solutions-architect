@@ -206,7 +206,7 @@ Storage:
 * [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 * [AWS Training](http://aws.amazon.com/training) and [Free Training](https://www.aws.training/learningobject/curriculum?id=20685&ep=sec&sec=assoc_saa)
 * [Acloudguru training](https://acloudguru.com/course/aws-certified-solutions-architect-associate-saa-c02)
-* [Free Practice Exams](https://www.knowledgehut.com/practice-tests/aws-solutions-architect-associate) and [Dump Practice Exams](https://github.com/MattN-HB/aws-solutions-architect/tree/main/PracticeExams)
+* [Free Practice Exams](https://www.knowledgehut.com/practice-tests/aws-solutions-architect-associate) ,[25 questions](https://awscoach.net/architect-associate-questions/) and [Dump Practice Exams](https://github.com/MattN-HB/aws-solutions-architect/tree/main/PracticeExams)
 * [Main Cert Page](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 * [AWS Cert Center](https://www.certmetrics.com/amazon/default.aspx)
 * [All Official AWS Cert Past Exams](https://aws.psiexams.com/#/dashboard/compact-dashboard)
