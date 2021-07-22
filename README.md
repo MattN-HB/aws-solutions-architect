@@ -213,3 +213,13 @@ Storage:
 * [AWS Cert Prep Center](https://aws.amazon.com/certification/certification-prep/?cta=saa_examprep)
 * [All FAQs](https://aws.amazon.com/faqs/?ep=sec&sec=assoc_saa)
 
+## CLI Helpful Commands
+<details>
+  <summary>Expand</summary>
+  
+* ```aws configure```
+* ```aws s3 cp <path> s3://<bucket>```
+* ```aws s3 ls```
+* List Bucket Content: ```aws s3 ls s3://<bucket>```
+* grab your environment variables from cli ```env | grep ^AWS```
+* What is the policies attached to that user ```aws iam list-attached-user-policies --user-name=$AWS_ACCOUNT_USERNAME```
