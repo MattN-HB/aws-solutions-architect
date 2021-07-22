@@ -211,7 +211,6 @@ Storage:
 * Create s3 bucket ```aws s3api create-bucket --bucket <bucketname> --region us-east-1```
 * grab your environment variables from cli ```env | grep ^AWS```
 * What is the policies attached to that user ```aws iam list-attached-user-policies --user-name=$AWS_ACCOUNT_USERNAME```
- </details>
 * Create iam user ```aws iam create-user --user-name root-for-vault```
 * Attach policy ```aws iam attach-user-policy --user-name root-for-vault --policy-arn arn:aws:iam::${AWS_ACCOUNT_ID}:policy/vault-root```
 * Create access key and secret passing to txt for temp use ```aws iam create-access-key --user-name root-for-vault | tee root-for-vault-keys.txt```
@@ -219,7 +218,7 @@ Storage:
 * Create VPC ```aws ec2 create-default-vpc```
 * Run EC2 ```aws ec2 run-instances --image-id <amiid> --instance-type <ec2type> --count 1```
 * List RDS ```aws rds describe-db-instances```
-
+ </details>
 ## Resources
 * [AWS Whitepapers](http://aws.amazon.com/whitepapers/)
 * [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
