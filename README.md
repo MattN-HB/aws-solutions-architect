@@ -231,3 +231,5 @@ Storage:
 * [All Official AWS Cert Past Exams](https://aws.psiexams.com/#/dashboard/compact-dashboard)
 * [AWS Cert Prep Center](https://aws.amazon.com/certification/certification-prep/?cta=saa_examprep)
 * [All FAQs](https://aws.amazon.com/faqs/?ep=sec&sec=assoc_saa)
+* [CLI S3 cheat sheet](https://acloudguru.com/blog/engineering/aws-s3-cheat-sheet)
+* [Boto3 SNS Doc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
