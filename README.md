@@ -103,12 +103,14 @@ minimize costs.
 * Migration and data transfer
 * Networking, connectivity, and content delivery
 * Security
-  
-![image](https://user-images.githubusercontent.com/44328319/127173054-6721a4cd-ac53-492d-b62d-8432ddfb177b.png)
-![image](https://user-images.githubusercontent.com/44328319/127173180-fc408fda-8d3d-449d-8466-d423e6b08440.png)
-![image](https://user-images.githubusercontent.com/44328319/127173211-57e74be4-9e83-4072-bc7c-8d4b627b18ea.png)
-![image](https://user-images.githubusercontent.com/44328319/127173332-c19dc17a-10ec-4b8a-bea8-97b25e15f5b2.png)
-
+  <details>
+  <summary>Sec Test Axioms>
+    ![image](https://user-images.githubusercontent.com/44328319/127173054-6721a4cd-ac53-492d-b62d-8432ddfb177b.png)
+    ![image](https://user-images.githubusercontent.com/44328319/127173180-fc408fda-8d3d-449d-8466-d423e6b08440.png)
+    ![image](https://user-images.githubusercontent.com/44328319/127173211-57e74be4-9e83-4072-bc7c-8d4b627b18ea.png)
+    ![image](https://user-images.githubusercontent.com/44328319/127173332-c19dc17a-10ec-4b8a-bea8-97b25e15f5b2.png)
+    ![image](https://user-images.githubusercontent.com/44328319/127173919-6098ecf4-fe43-40c9-a40a-26beb0c79b55.png)
+  </details>
   
 * Serverless design principles
 </details>
