@@ -103,6 +103,12 @@ minimize costs.
 * Migration and data transfer
 * Networking, connectivity, and content delivery
 * Security
+  
+![image](https://user-images.githubusercontent.com/44328319/127173054-6721a4cd-ac53-492d-b62d-8432ddfb177b.png)
+![image](https://user-images.githubusercontent.com/44328319/127173180-fc408fda-8d3d-449d-8466-d423e6b08440.png)
+![image](https://user-images.githubusercontent.com/44328319/127173211-57e74be4-9e83-4072-bc7c-8d4b627b18ea.png)
+
+  
 * Serverless design principles
 </details>
 <details>
