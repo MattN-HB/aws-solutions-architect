@@ -1,7 +1,7 @@
 # aws-solutions-architect
 This repo is a guide to taking solutions architect associate cert in 2021. The main [overview of the exam](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf) and [AWS official site](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 
-## Domain Breakdown
+## Domain Breakdown [Training by Domain](https://www.aws.training/Details/Curriculum?id=20685&ep=sec&sec=assoc_saa)
 <details>
   <summary>Domain 1: Design Resilient Architectures 30%</summary>
 
