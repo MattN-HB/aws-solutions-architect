@@ -169,6 +169,8 @@ Networking and Content Delivery:
 * [Amazon Route 53](https://aws.amazon.com/route53/faqs/?ep=sec&sec=assoc_saa)
 * AWS Transit Gateway
 * [Amazon VPC](https://aws.amazon.com/vpc/faqs/?ep=sec&sec=assoc_saa)
+  ![image](https://user-images.githubusercontent.com/44328319/127172005-1313ef3b-1142-4a35-b0b9-85176882acf6.png)
+
 
 Security, Identity, and Compliance:
 * AWS Certificate Manager (ACM)
