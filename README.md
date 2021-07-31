@@ -239,6 +239,7 @@ Storage:
 </details>
   
 ## Resources
+* [Great Medium Article on how to crack it](https://medium.com/javarevisited/top-5-aws-training-courses-to-crack-amazon-web-service-solutions-architect-associate-certification-3f4affa8f660)
 * [AWS Whitepapers](http://aws.amazon.com/whitepapers/)
 * [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
 * [AWS Training](http://aws.amazon.com/training) and [Free Training](https://www.aws.training/learningobject/curriculum?id=20685&ep=sec&sec=assoc_saa)
