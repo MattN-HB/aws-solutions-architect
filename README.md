@@ -245,6 +245,7 @@ Storage:
 * [AWS Training](http://aws.amazon.com/training) and [Free Training](https://www.aws.training/learningobject/curriculum?id=20685&ep=sec&sec=assoc_saa)
 * [Acloudguru training](https://acloudguru.com/course/aws-certified-solutions-architect-associate-saa-c02)
 * [Free Practice Exams](https://www.knowledgehut.com/practice-tests/aws-solutions-architect-associate) ,[25 questions](https://awscoach.net/architect-associate-questions/) and [Dump Practice Exams](https://github.com/MattN-HB/aws-solutions-architect/tree/main/PracticeExams) and [$20 Practice Exam Thru Cert Center](https://www.certmetrics.com/amazon/candidate/exam_scheduling.aspx)
+* [6 practice exams $29.99](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-f5zcy9zHHnUSBI.ZVgWHGA&utm_medium=udemyads&utm_source=aff-campaign)
 * [Flashcards](https://quizlet.com/125872081/aws-solutions-architect-flash-cards/)
 * [Main Cert Page](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 * [AWS Cert Center](https://www.certmetrics.com/amazon/default.aspx)
