@@ -29,6 +29,8 @@ are not possible.
 * Identify how data service consistency will affect the operation of the application.
 * Select data services that will meet the access requirements of the application.
 * Identify storage services that can be used with hybrid or non-cloud-native applications.
+  ![image](https://user-images.githubusercontent.com/44328319/127782754-f30964b3-d76f-4d82-855f-aac0b188ad15.png)
+
 </details>
 <details>
   <summary>Domain 2: Define Performant Architectures 28%</summary>
