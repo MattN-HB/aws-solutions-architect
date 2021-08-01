@@ -70,7 +70,7 @@ requirements.
 
 3.2 Design secure application tiers
 
-* Given traffic control requirements, determine when and how to use security groups and
+* Given traffic control requirements, determine when and how to use [security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#security-group-rules) and
 network ACLs.
 * Determine a network segmentation strategy using public and private subnets.
 * Select the appropriate routing mechanism to securely access AWS service endpoints or
@@ -131,38 +131,42 @@ AWS Billing and Cost Management:
 
 Application Integration:
 * Amazon Simple Notification Service (Amazon SNS)
-* [Amazon Simple Queue Service SQS](https://aws.amazon.com/sqs/faqs/?ep=sec&sec=assoc_saa)
+* [Amazon Simple Queue Service SQS](https://aws.amazon.com/sqs/faqs/?ep=sec&sec=assoc_saa) and [Cheat Sheet](https://tutorialsdojo.com/amazon-sqs/?src=udemy)
 
 Compute:
-* [Amazon EC2](https://aws.amazon.com/ec2/faqs/?ep=sec&sec=assoc_saa)
+* [Amazon EC2](https://aws.amazon.com/ec2/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-elastic-compute-cloud-amazon-ec2/%20?src=udemy)
   
   ![image](https://user-images.githubusercontent.com/44328319/127187878-0f66c1ea-2c5b-4306-b05d-d784fb96fcd5.png)
 
 * AWS Elastic Beanstalk
-* Amazon Elastic Container Service (Amazon ECS)
+* [Amazon Elastic Container Service (Amazon ECS)](https://tutorialsdojo.com/amazon-elastic-container-service-amazon-ecs/?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/127787080-24716f97-6446-4be1-96d8-870fe66f80f2.png)
+
 * Amazon Elastic Kubernetes Service (Amazon EKS)
 * Elastic Load Balancing
 * AWS Fargate
-* AWS Lambda
+* [AWS Lambda](https://tutorialsdojo.com/aws-lambda/?src=udemy)
 
 Database:
-* Amazon Aurora
-* Amazon DynamoDB
-* Amazon ElastiCache
-* [Amazon RDS](https://aws.amazon.com/rds/faqs/?ep=sec&sec=assoc_saa)
+* [Amazon Aurora](https://tutorialsdojo.com/amazon-aurora/)
+* [Amazon DynamoDB](https://tutorialsdojo.com/amazon-dynamodb/?src=udemy) and [parition keys](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/) and [dynamo streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.Tutorial.html)
+* [Amazon ElastiCache](https://tutorialsdojo.com/amazon-elasticache/?src=udemy)
+* [Amazon RDS](https://aws.amazon.com/rds/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-relational-database-service-amazon-rds/?src=udemy)
 * Amazon Redshift
 
 Management and Governance:
-* AWS Auto Scaling
+* [AWS Auto Scaling](https://tutorialsdojo.com/aws-auto-scaling/?src=udemy) and [FAQ Target Tracking Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
 * AWS Backup
 * AWS CloudFormation
-* AWS CloudTrail
-* Amazon CloudWatch
+* [AWS CloudTrail](https://tutorialsdojo.com/aws-cloudtrail/?src=udemy)
+* [Amazon CloudWatch](https://tutorialsdojo.com/amazon-cloudwatch/?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/127785849-faf64975-c86b-4211-9598-e203bbfedba8.png)
+
 * AWS Config
 * Amazon EventBridge (Amazon CloudWatch Events)
 * AWS Organizations
-* AWS Resource Access Manager
-* AWS Systems Manager
+* [AWS Resource Access Manager](https://aws.amazon.com/ram/)
+* [AWS Systems Manager](https://tutorialsdojo.com/aws-systems-manager/?src=udemy) and [Parameter Store](https://aws.amazon.com/blogs/mt/the-right-way-to-store-secrets-using-parameter-store/)
 * AWS Trusted Advisor
 
 Migration and Transfer:
@@ -174,41 +178,41 @@ Migration and Transfer:
 * AWS Transfer Family
 
 Networking and Content Delivery:
-* Amazon API Gateway
-* Amazon CloudFront
+* [Amazon API Gateway](https://tutorialsdojo.com/amazon-api-gateway/?src=udemy) and [FAQ Throttling Limits](https://aws.amazon.com/api-gateway/faqs/#Throttling_and_Caching)
+* [Amazon CloudFront](https://tutorialsdojo.com/amazon-cloudfront/?src=udemy) and [private signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html)
 * AWS Direct Connect
 * AWS Global Accelerator
 * [Amazon Route 53](https://aws.amazon.com/route53/faqs/?ep=sec&sec=assoc_saa)
 * AWS Transit Gateway
-* [Amazon VPC](https://aws.amazon.com/vpc/faqs/?ep=sec&sec=assoc_saa)
+* [Amazon VPC](https://aws.amazon.com/vpc/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-vpc/?src=udemy)
   
   ![image](https://user-images.githubusercontent.com/44328319/127172005-1313ef3b-1142-4a35-b0b9-85176882acf6.png)
 
 
 Security, Identity, and Compliance:
 * AWS Certificate Manager (ACM)
-* AWS Directory Service
+* [AWS Directory Service](https://tutorialsdojo.com/aws-directory-service/?src=udemy)
 * Amazon GuardDuty
-* AWS Identity and Access Management (IAM)
+* [AWS Identity and Access Management (IAM)](https://tutorialsdojo.com/aws-identity-and-access-management-iam/?src=udemy) and [IAM DB AUTH](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
 * Amazon Inspector
-* AWS Key Management Service (AWS KMS)
-* Amazon Macie
+* [AWS Key Management Service (AWS KMS)](https://tutorialsdojo.com/aws-key-management-service-aws-kms/?src=udemy)
+* [Amazon Macie](https://tutorialsdojo.com/amazon-macie/?src=udemy)
 * AWS Secrets Manager
-* AWS Shield
+* [AWS Shield](https://tutorialsdojo.com/aws-shield/?src=udemy)
 * AWS Single Sign-On
-* AWS WAF
+* [AWS WAF](https://tutorialsdojo.com/aws-waf/?src=udemy)
 
 Storage:
-* Amazon Elastic Block Store (Amazon EBS)
-  
+* [Amazon Elastic Block Store (Amazon EBS)](https://tutorialsdojo.com/amazon-ebs/%20?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/127786614-4609eafa-212f-4be1-bc87-28c0c41004f5.png)
   ![image](https://user-images.githubusercontent.com/44328319/127188081-4b0bab60-a2fd-4bcc-b377-61c71b7253a7.png)
   ![image](https://user-images.githubusercontent.com/44328319/127188194-ff4e01c7-feed-4948-9632-c99b3621748f.png)
   ![image](https://user-images.githubusercontent.com/44328319/127188330-3a36f035-96d3-4f0a-b154-7a77d17cbc70.png)
 
-* Amazon Elastic File System (Amazon EFS)
-* Amazon FSx
-* [Amazon S3](https://aws.amazon.com/s3/faqs/?ep=sec&sec=assoc_saa)
-* Amazon S3 Glacier
+* [Amazon Elastic File System (Amazon EFS)](https://tutorialsdojo.com/amazon-efs/?src=udemy)
+* [Amazon FSx](https://tutorialsdojo.com/amazon-fsx/?src=udemy)
+* [Amazon S3](https://aws.amazon.com/s3/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-s3/?src=udemy) and [s3 transfer acceleration](https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html)
+* [Amazon S3 Glacier](https://aws.amazon.com/s3/storage-classes/)
 * AWS Storage Gateway
 </details>
 
@@ -243,6 +247,7 @@ Storage:
 </details>
   
 ## Resources
+* [Tutorial Dojo Study Guide](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c02/?src=udemy)
 * [Notes Doc](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS%20Certified%20Solutions%20Architect.pdf)
 * [Great Medium Article on how to crack it](https://medium.com/javarevisited/top-5-aws-training-courses-to-crack-amazon-web-service-solutions-architect-associate-certification-3f4affa8f660)
 * [AWS Whitepapers](http://aws.amazon.com/whitepapers/)
@@ -251,7 +256,7 @@ Storage:
 * [Acloudguru training](https://acloudguru.com/course/aws-certified-solutions-architect-associate-saa-c02)
 * [Udemy course](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/?ranMID=39197&ranEAID=CuIbQrBnhiw&ranSiteID=CuIbQrBnhiw-9pVf0yrvMcU_MIPaorYTQQ&utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=CuIbQrBnhiw)
 * [Free Practice Exams](https://www.knowledgehut.com/practice-tests/aws-solutions-architect-associate) ,[25 questions](https://awscoach.net/architect-associate-questions/) and [Dump Practice Exams](https://github.com/MattN-HB/aws-solutions-architect/tree/main/PracticeExams) and [$20 Practice Exam Thru Cert Center](https://www.certmetrics.com/amazon/candidate/exam_scheduling.aspx)
-* [6 practice exams $29.99](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-f5zcy9zHHnUSBI.ZVgWHGA&utm_medium=udemyads&utm_source=aff-campaign)
+* [Amazing 6 practice exams $29.99 with video and thorough study guides/explanations](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-f5zcy9zHHnUSBI.ZVgWHGA&utm_medium=udemyads&utm_source=aff-campaign)
 * [Flashcards](https://quizlet.com/125872081/aws-solutions-architect-flash-cards/)
 * [Main Cert Page](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 * [AWS Cert Center](https://www.certmetrics.com/amazon/default.aspx)
@@ -260,3 +265,10 @@ Storage:
 * [All FAQs](https://aws.amazon.com/faqs/?ep=sec&sec=assoc_saa)
 * [CLI S3 cheat sheet](https://acloudguru.com/blog/engineering/aws-s3-cheat-sheet)
 * [Boto3 SNS Doc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
+* [EFS vs S3 Cheat Sheet](https://tutorialsdojo.com/amazon-s3-vs-ebs-vs-efs/?src=udemy)
+* [Aurora Custom Endpoints](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html)
+* [Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+* [Aurora Serverless DB](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.how-it-works.html)
+* [MQ](https://tutorialsdojo.com/amazon-mq/?src=udemy)
+* [Nat Gateway Comparison](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html)
+* [Aurora plus lambda](https://aws.amazon.com/blogs/database/capturing-data-changes-in-amazon-aurora-using-aws-lambda/)
