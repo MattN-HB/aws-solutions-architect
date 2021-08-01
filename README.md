@@ -236,6 +236,7 @@ Storage:
 * Create VPC ```aws ec2 create-default-vpc```
 * Run EC2 ```aws ec2 run-instances --image-id <amiid> --instance-type <ec2type> --count 1```
 * List RDS ```aws rds describe-db-instances```
+* Grab metadata from instance ```http://169.254.169.254/latest/meta-data/```
 </details>
   
 ## Resources
