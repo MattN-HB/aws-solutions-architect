@@ -240,6 +240,7 @@ Storage:
 </details>
   
 ## Resources
+* [Notes Doc](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS%20Certified%20Solutions%20Architect.pdf)
 * [Great Medium Article on how to crack it](https://medium.com/javarevisited/top-5-aws-training-courses-to-crack-amazon-web-service-solutions-architect-associate-certification-3f4affa8f660)
 * [AWS Whitepapers](http://aws.amazon.com/whitepapers/)
 * [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/)
