@@ -272,3 +272,7 @@ Storage:
 * [MQ](https://tutorialsdojo.com/amazon-mq/?src=udemy)
 * [Nat Gateway Comparison](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html)
 * [Aurora plus lambda](https://aws.amazon.com/blogs/database/capturing-data-changes-in-amazon-aurora-using-aws-lambda/)
+<details>
+  <summary>Default Auto Scaling Policy Flow</summary>
+  ![image](https://user-images.githubusercontent.com/44328319/127864952-1edc2829-d14b-4622-928a-98814cf9cf55.png)
+ </details>
