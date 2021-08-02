@@ -274,5 +274,5 @@ Storage:
 * [Aurora plus lambda](https://aws.amazon.com/blogs/database/capturing-data-changes-in-amazon-aurora-using-aws-lambda/)
 <details>
   <summary>Default Auto Scaling Policy Flow</summary>
-  ![image](https://user-images.githubusercontent.com/44328319/127864952-1edc2829-d14b-4622-928a-98814cf9cf55.png)
+![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
  </details>
