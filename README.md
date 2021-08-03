@@ -283,6 +283,5 @@ Storage:
   <details>
     <summary>RDS Read Replicas</summary>
     
-    ![image](https://user-images.githubusercontent.com/44328319/128017275-77beb9ae-872b-4c9d-9322-f6349e617a7c.png)
-  </details>
+![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
     
