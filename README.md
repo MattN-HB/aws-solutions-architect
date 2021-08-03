@@ -150,6 +150,8 @@ Compute:
 Database:
 * [Amazon Aurora](https://tutorialsdojo.com/amazon-aurora/)
 * [Amazon DynamoDB](https://tutorialsdojo.com/amazon-dynamodb/?src=udemy) and [parition keys](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/) and [dynamo streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.Tutorial.html)
+  ![image](https://user-images.githubusercontent.com/44328319/128016012-68be6308-4b90-48bc-bd29-9ee33e5263bd.png)
+
 * [Amazon ElastiCache](https://tutorialsdojo.com/amazon-elasticache/?src=udemy)
 * [Amazon RDS](https://aws.amazon.com/rds/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-relational-database-service-amazon-rds/?src=udemy)
 * Amazon Redshift
