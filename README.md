@@ -71,7 +71,7 @@ requirements.
 3.2 Design secure application tiers
 
 * Given traffic control requirements, determine when and how to use [security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#security-group-rules) and
-network ACLs.
+network ACLs. **TIP:** "Security Group acts as a firewall, it will only control both inbound and outbound traffic at the instance level and not on the whole VPC."
 * Determine a network segmentation strategy using public and private subnets.
 * Select the appropriate routing mechanism to securely access AWS service endpoints or
 internet-based resources from Amazon VPC.
