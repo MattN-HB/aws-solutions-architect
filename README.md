@@ -246,6 +246,11 @@ Storage:
 * List RDS ```aws rds describe-db-instances```
 * Grab metadata from instance ```curl http://169.254.169.254/latest/meta-data/``` ```wget http://169.254.169.254/latest/meta-data/```
 * Grab userdata from instance ```curl http://169.254.169.254/latest/user-data/```
+* List lambda functions ```aws lambda list-functions --max-items 10```  [Full list of lambda cli ](https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html)
+* Invoke Lambda ```aws lambda invoke \
+    --function-name my-function \
+    --payload '{ "name": "Bob" }' \
+    response.json```
 </details>
   
 ## Resources
