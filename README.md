@@ -209,7 +209,6 @@ Storage:
   ![image](https://user-images.githubusercontent.com/44328319/127786614-4609eafa-212f-4be1-bc87-28c0c41004f5.png)
   ![image](https://user-images.githubusercontent.com/44328319/127188081-4b0bab60-a2fd-4bcc-b377-61c71b7253a7.png)
   ![image](https://user-images.githubusercontent.com/44328319/127188194-ff4e01c7-feed-4948-9632-c99b3621748f.png)
-  ![image](https://user-images.githubusercontent.com/44328319/127188330-3a36f035-96d3-4f0a-b154-7a77d17cbc70.png)
 
 * [Amazon Elastic File System (Amazon EFS)](https://tutorialsdojo.com/amazon-efs/?src=udemy)
 * [Amazon FSx](https://tutorialsdojo.com/amazon-fsx/?src=udemy)
