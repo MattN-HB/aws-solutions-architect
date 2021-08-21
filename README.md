@@ -253,28 +253,27 @@ Storage:
 * Delete an S3 bucket and all its contents with just one command 
 `aws s3 rb s3://bucket-name -force`
 * Copy a directory and its subfolders from your PC to Amazon S3 
-`aws s3 cp MYFolder s3://bucket-name recursive E-region us-west-2J`
+`aws s3 cp MYFolder s3://bucket-name -recursive [-region us-west-2]`
 * Display subsets of all available ec2 images 
-`aws ec2 describe-images I grep ubuntu`
+`aws ec2 describe-images | grep ubuntu`
 * List users in a different format 
-`aws iam list-used:s -output table`
+`aws iam list-users --output table`
 * List the sizes of an S3 bucket and its contents 
 `aws s3api list-objects --bucket BUCKETNAME --output json --query " 
-Esum(ContentsEJ.Size), length(ContentsEJ)J"`
+[sum(Contents[].Size), length(Contents[])]"`
 * Move S3 bucket to a different location 
 `aws s3 sync s3://oldbucket s3://newbucket --source-region us-west-l 
 --region us-west-2`
 * List users by ARN 
-`aws iam list-users -output json I jq -r .UsersEJ .Arn`
+`aws iam list-users --output json | jq -r .Users[].Arn`
 * List all of your instances that are currently stopped and the 
 reason for the stop 
 `aws ec2 describe-instances --filters Name:instance-state-name. 
-Valueszstopped --region eu-west-l --output json I jq -r 
-. Reservations EJ .Instances EI .StateReason .Message`
+Values=stopped --region eu-west-l --output json | jq -r .Reservations[].Instances[].StateReason.Message`
 * Other ways to pass input parameters to the AWS CLI with JSON 
 `aws iam put-user-policy --user-name AWS-Cli-Test --policy-name 
-Power-Access --policy-document "Statement" : E € "Effect" : 
-"Allow" , "NotAction" : "Resource" : J + ' `
+Power-Access --policy-document { "Statement":[{ "Effect": 
+"Allow" , "NotAction":"iam:*", "Resource": "*"} ] }`
 </details>
   
 ## Resources
