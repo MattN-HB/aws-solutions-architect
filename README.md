@@ -258,7 +258,7 @@ Storage:
 `aws ec2 describe-images | grep ubuntu`
 * List users in a different format 
 `aws iam list-users --output table`
-* Get credentialed IAM reports from CLI `aws iam generate-credential-report` and read it `aws iam get-credential-report --output text >> base64report.txt` and then decode `base64 --decode base64report.txt >> credentialreport.csv`
+* Get credentialed IAM reports from CLI `aws iam generate-credential-report` and read it `aws iam get-credential-report --output text | base64 --decode >> credentialreport.csv`
 * List the sizes of an S3 bucket and its contents 
 `aws s3api list-objects --bucket BUCKETNAME --output json --query " 
 [sum(Contents[].Size), length(Contents[])]"`
