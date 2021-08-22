@@ -269,10 +269,9 @@ Storage:
 --region us-west-2`
 * List users by ARN 
 `aws iam list-users --output json | jq -r .Users[].Arn`
-* List all of your instances that are currently stopped and the 
-reason for the stop 
-`aws ec2 describe-instances --filters Name:instance-state-name. 
-Values=stopped --region eu-west-l --output json | jq -r .Reservations[].Instances[].StateReason.Message`
+* List all of your instances that are currently running
+`aws ec2 describe-instances --filters --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[].[InstanceId,State,PublicIpAddress, Tags[?Key==`Name`]]' --region us-east-1 --output json | jq
+`
 * Other ways to pass input parameters to the AWS CLI with JSON 
 `aws iam put-user-policy --user-name AWS-Cli-Test --policy-name 
 Power-Access --policy-document { "Statement":[{ "Effect": 
