@@ -10,6 +10,8 @@ This repo is a guide to taking solutions architect associate cert in 2021. The m
 * Determine a scaling strategy for components used in a design.
 * Select an appropriate database based on requirements.
 * Select an appropriate compute and storage service based on requirements.
+  ![image](https://user-images.githubusercontent.com/44328319/130339173-4edaa5d0-ac67-463a-ac16-84ac8e6d3762.png)
+
 
 1.2 Design highly available and/or fault-tolerant architectures
 * Determine the amount of resources needed to provide a fault-tolerant architecture across
