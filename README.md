@@ -69,6 +69,8 @@ requirements.
 * Determine ways to secure credentials using features of AWS IAM.
 * Determine the secure method for an application to access AWS APIs.
 * Select appropriate services to create traceability for access to AWS resources.
+  ![image](https://user-images.githubusercontent.com/44328319/130360611-4d6bedb6-9d8b-495d-845b-6dbe3f69eb06.png)
+
 
 3.2 Design secure application tiers
 
