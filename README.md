@@ -163,6 +163,8 @@ Management and Governance:
 * AWS Backup
 * AWS CloudFormation
 * [AWS CloudTrail](https://tutorialsdojo.com/aws-cloudtrail/?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/130357361-712e8fad-f7e7-4f09-a179-e6ad97dba862.png)
+
 * [Amazon CloudWatch](https://tutorialsdojo.com/amazon-cloudwatch/?src=udemy)
   ![image](https://user-images.githubusercontent.com/44328319/127785849-faf64975-c86b-4211-9598-e203bbfedba8.png)
 
