@@ -147,7 +147,7 @@ Compute:
   ![image](https://user-images.githubusercontent.com/44328319/127787080-24716f97-6446-4be1-96d8-870fe66f80f2.png)
 
 * Amazon Elastic Kubernetes Service (Amazon EKS)
-* Elastic Load Balancing
+* [Elastic Load Balancing](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/) (e.g. [comparison](https://tutorialsdojo.com/application-load-balancer-vs-network-load-balancer-vs-classic-load-balancer/)
 * AWS Fargate
 * [AWS Lambda](https://tutorialsdojo.com/aws-lambda/?src=udemy)
 
