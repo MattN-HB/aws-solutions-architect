@@ -342,20 +342,20 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 ## My Personal Cheat Sheet / Takeways
  <details>
     <summary>Expand</summary>
-  * whole vpc use nacl not sec group..sec group to instances
-  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
-  * elastic cache and dynamo db store session mgmt
-  * iam role plus ad connector (when in doubt IAM is your friend)
-  * Cookies (keep url) and signed URL if don't mind diff url.
-  * S3 transfer acceleration = fastest transfer
-  * EMR = big data
-  * Route53 geopromixity for user location
-  * S3 web hosting cheaper
-  * ssd = small  (I/O /Throughput keyword ="frequent")
-  * hdd = large sequential
-  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
-  * A and AAAA = route53 aliases to alb
-  * "Open source" container = EKS
-  * aws storage gateway = small data transfer and caching
-  * aws datasyc = large data transfer
+ * whole vpc use nacl not sec group..sec group to instances
+ * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
+ * elastic cache and dynamo db store session mgmt
+ * iam role plus ad connector (when in doubt IAM is your friend)
+ * Cookies (keep url) and signed URL if don't mind diff url.
+ * S3 transfer acceleration = fastest transfer
+ * EMR = big data
+ * Route53 geopromixity for user location
+ * S3 web hosting cheaper
+ * ssd = small  (I/O /Throughput keyword ="frequent")
+ * hdd = large sequential
+ * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
+ * A and AAAA = route53 aliases to alb
+ * "Open source" container = EKS
+ * aws storage gateway = small data transfer and caching
+ * aws datasyc = large data transfer
  </details>  
