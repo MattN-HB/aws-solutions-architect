@@ -296,6 +296,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 </details>
   
 ## Resources
+<details>
+    <summary>Expand</summary>
 * [Tutorial Dojo Study Guide](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c02/?src=udemy)
 * [Notes Doc](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS%20Certified%20Solutions%20Architect.pdf)
 * [Great Medium Article on how to crack it](https://medium.com/javarevisited/top-5-aws-training-courses-to-crack-amazon-web-service-solutions-architect-associate-certification-3f4affa8f660)
@@ -321,23 +323,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 * [MQ](https://tutorialsdojo.com/amazon-mq/?src=udemy)
 * [Nat Gateway Comparison](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html)
 * [Aurora plus lambda](https://aws.amazon.com/blogs/database/capturing-data-changes-in-amazon-aurora-using-aws-lambda/)
-<details>
-  <summary>Default Auto Scaling Policy Flow</summary>
-  
-![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
-</details>
-  
- <details>
-    <summary>RDS Read Replicas</summary>
-    
-![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
- </details>
- 
- <details>
-    <summary>Proper Bastion Host Config</summary>
-    
-![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
- </details>
+ </details>  
   
 ## My Personal Cheat Sheet / Takeways
  <details>
@@ -359,3 +345,22 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * aws storage gateway = small data transfer and caching
  * aws datasyc = large data transfer
  </details>  
+   
+<details>
+  <summary>Default Auto Scaling Policy Flow</summary>
+  
+![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
+</details>
+  
+ <details>
+    <summary>RDS Read Replicas</summary>
+    
+![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
+ </details>
+ 
+ <details>
+    <summary>Proper Bastion Host Config</summary>
+    
+![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
+ </details>
+  
