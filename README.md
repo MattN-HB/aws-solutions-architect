@@ -1,7 +1,12 @@
 # aws-solutions-architect
-This repo is a guide to taking solutions architect associate cert in 2021. The main [overview of the exam](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf) and [AWS official site](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+This repo is a guide to taking solutions architect associate cert in 2021. The main [overview of the exam](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf) and [AWS official site](https://aws.amazon.com/certification/certified-solutions-architect-associate/). 
 
-## Domain Breakdown [Training by Domain](https://www.aws.training/Details/Curriculum?id=20685&ep=sec&sec=assoc_saa)
+## My Key Resources: 
+* [acloudguru hands on course](https://acloudguru.com/course/aws-certified-solutions-architect-associate-saa-c02)
+* These amazing [practice exams with explanations](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/)
+* These amazing [study guides/cheat sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
+
+## Domain Breakdown 
 <details>
   <summary>Domain 1: Design Resilient Architectures 30%</summary>
 
@@ -124,7 +129,7 @@ minimize costs.
 Analytics:
 * Amazon Athena
 * Amazon Elasticsearch Service (Amazon ES)
-* Amazon EMR
+* [Amazon EMR](https://tutorialsdojo.com/amazon-emr/?src=udemy)
 * AWS Glue
 * Amazon Kinesis
 * Amazon QuickSight
@@ -190,7 +195,11 @@ Networking and Content Delivery:
 * [Amazon CloudFront](https://tutorialsdojo.com/amazon-cloudfront/?src=udemy) and [private signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html)
 * AWS Direct Connect
 * AWS Global Accelerator
-* [Amazon Route 53](https://aws.amazon.com/route53/faqs/?ep=sec&sec=assoc_saa)
+* [Amazon Route 53](https://aws.amazon.com/route53/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-route-53/)
+  ![image](https://user-images.githubusercontent.com/44328319/130411297-10c7b9d1-1658-4265-81eb-159c6f0e635e.png)
+  ![image](https://user-images.githubusercontent.com/44328319/130411808-b7be9669-32b9-428a-ba02-adc6b4914169.png)
+
+
 * AWS Transit Gateway
 * [Amazon VPC](https://aws.amazon.com/vpc/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-vpc/?src=udemy)
   
