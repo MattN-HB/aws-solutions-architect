@@ -6,6 +6,14 @@ This repo is a guide to taking solutions architect associate cert in 2021. The m
 * These amazing [practice exams with explanations](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/)
 * These amazing [study guides/cheat sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
 
+## Scoring
+* 100 - 1000 with minimum 720
+* scaled scoring model
+* 15 unscored questions that do not affect your score
+* Unanswered questions are scored as incorrect; there is no penalty for guessing
+* Multiple-choice: Has one correct response and three incorrect responses (distractors).
+* Multiple-response: Has two or more correct responses out of five or more options
+
 ## Domain Breakdown 
 <details>
   <summary>Domain 1: Design Resilient Architectures 30%</summary>
@@ -133,7 +141,7 @@ Analytics:
 * Amazon Elasticsearch Service (Amazon ES)
 * [Amazon EMR](https://tutorialsdojo.com/amazon-emr/?src=udemy)
 * AWS Glue
-* Amazon Kinesis
+* [Amazon Kinesis](https://tutorialsdojo.com/amazon-kinesis/?src=udemy)
 * Amazon QuickSight
 
 AWS Billing and Cost Management:
@@ -186,10 +194,14 @@ Management and Governance:
 
 Migration and Transfer:
 * AWS Database Migration Service (AWS DMS)
-* AWS DataSync
+* [AWS DataSync](https://tutorialsdojo.com/aws-datasync/?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/130419012-827b1989-9e43-4c6d-b38b-5ad9687d959b.png)
+
 * AWS Migration Hub
 * AWS Server Migration Service (AWS SMS)
 * AWS Snowball
+  ![image](https://user-images.githubusercontent.com/44328319/130419974-915fbb09-cce1-4f1a-a1d5-4eb64bc0ba3a.png)
+
 * AWS Transfer Family
 
 Networking and Content Delivery:
@@ -235,14 +247,6 @@ Storage:
 
 * AWS Storage Gateway
 </details>
-
-## Scoring
-* 100 - 1000 with minimum 720
-* scaled scoring model
-* 15 unscored questions that do not affect your score
-* Unanswered questions are scored as incorrect; there is no penalty for guessing
-* Multiple-choice: Has one correct response and three incorrect responses (distractors).
-* Multiple-response: Has two or more correct responses out of five or more options
 
 ## CLI Helpful Commands
 <details>
@@ -331,6 +335,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
     <summary>Expand</summary>
    
  * whole vpc use nacl not sec group..sec group to instances
+   ![image](https://user-images.githubusercontent.com/44328319/130420204-178bb2e1-c8af-4751-bcc1-1f457a2a9d9b.png)
+
  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
  * elastic cache and dynamo db store session mgmt
  * iam role plus ad connector (when in doubt IAM is your friend)
@@ -340,12 +346,28 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * Route53 geopromixity for user location
  * S3 web hosting cheaper
  * ssd = small  (I/O /Throughput keyword ="frequent")
+   ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
+
  * hdd = large sequential
  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
  * A and AAAA = route53 aliases to alb
  * "Open source" container = EKS
  * aws storage gateway = small data transfer and caching
  * aws datasyc = large data transfer
+ * when bandwith slow and need 250TB use snowball. As a rule of thumb, if it takes more than one week to upload your data to AWS using the spare capacity of your existing Internet connection, then you should consider using Snowball. For example, if you have a 100 Mb connection that you can solely dedicate to transferring your data and need to transfer 100 TB of data, it takes more than 100 days to complete data transfer over that connection. You can make the same transfer by using multiple Snowballs in about a week.
+   ![image](https://user-images.githubusercontent.com/44328319/130420000-d648c685-377a-4dfe-bb64-90a81c91b00e.png)
+
+ * dynamo issues check shard due to dyanmo autoscales
+   ![image](https://user-images.githubusercontent.com/44328319/130420964-5cbb29a8-1840-4fc0-b5ba-f1adfb381cf7.png)
+ * dynamo = scalable and key-value
+   ![image](https://user-images.githubusercontent.com/44328319/130421808-1faf0869-2673-41e8-831d-c33cae24e877.png)
+
+ * SQS 1min to 14 day retention with 120K standard queue limit and 20k fifo
+ * RDS Failover happens CNAME points to the standby instance
+   ![image](https://user-images.githubusercontent.com/44328319/130422152-0f866063-b6af-4b2e-83af-d6482527e50c.png)
+ * DDOS prevention >Create a rate-based web ACL rule using AWS WAF and associate it with Amazon CloudFront.
+ * Autoscale cooldown period = 300sec
+
  </details>  
    
 <details>
