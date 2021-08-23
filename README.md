@@ -321,10 +321,16 @@ Power-Access --policy-document { "Statement":[{ "Effect":
   <summary>Default Auto Scaling Policy Flow</summary>
   
 ![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
- </details>
+</details>
   
-  <details>
+ <details>
     <summary>RDS Read Replicas</summary>
     
 ![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
+ </details>
+ 
+ <details>
+    <summary>Proper Bastion Host Config</summary>
     
+![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
+ </details>
