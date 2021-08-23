@@ -81,6 +81,8 @@ requirements.
 
 * Given traffic control requirements, determine when and how to use [security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#security-group-rules) and
 network ACLs. **TIP:** "Security Group acts as a firewall, it will only control both inbound and outbound traffic at the instance level and not on the whole VPC."
+  ![image](https://user-images.githubusercontent.com/44328319/130416440-a16490e8-2698-4da1-a67d-d77c8ee3f000.png)
+
 * Determine a network segmentation strategy using public and private subnets.
 * Select the appropriate routing mechanism to securely access AWS service endpoints or
 internet-based resources from Amazon VPC.
@@ -151,7 +153,7 @@ Compute:
 * [Amazon Elastic Container Service (Amazon ECS)](https://tutorialsdojo.com/amazon-elastic-container-service-amazon-ecs/?src=udemy)
   ![image](https://user-images.githubusercontent.com/44328319/127787080-24716f97-6446-4be1-96d8-870fe66f80f2.png)
 
-* Amazon Elastic Kubernetes Service (Amazon EKS)
+* [Amazon Elastic Kubernetes Service (Amazon EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
 * [Elastic Load Balancing](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/) (e.g. [comparison](https://tutorialsdojo.com/application-load-balancer-vs-network-load-balancer-vs-classic-load-balancer/)
 * AWS Fargate
 * [AWS Lambda](https://tutorialsdojo.com/aws-lambda/?src=udemy)
@@ -229,6 +231,8 @@ Storage:
 * [Amazon FSx](https://tutorialsdojo.com/amazon-fsx/?src=udemy)
 * [Amazon S3](https://aws.amazon.com/s3/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-s3/?src=udemy) and [s3 transfer acceleration](https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html)
 * [Amazon S3 Glacier](https://aws.amazon.com/s3/storage-classes/)
+  ![image](https://user-images.githubusercontent.com/44328319/130414197-0611c541-118b-445f-8cd9-68b9af6789a2.png)
+
 * AWS Storage Gateway
 </details>
 
@@ -334,3 +338,24 @@ Power-Access --policy-document { "Statement":[{ "Effect":
     
 ![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
  </details>
+  
+## My Personal Cheat Sheet / Takeways
+ <details>
+    <summary>Expand</summary>
+  * whole vpc use nacl not sec group..sec group to instances
+  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
+  * elastic cache and dynamo db store session mgmt
+  * iam role plus ad connector (when in doubt IAM is your friend)
+  * Cookies (keep url) and signed URL if don't mind diff url.
+  * S3 transfer acceleration = fastest transfer
+  * EMR = big data
+  * Route53 geopromixity for user location
+  * S3 web hosting cheaper
+  * ssd = small  (I/O /Throughput keyword ="frequent")
+  * hdd = large sequential
+  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
+  * A and AAAA = route53 aliases to alb
+  * "Open source" container = EKS
+  * aws storage gateway = small data transfer and caching
+  * aws datasyc = large data transfer
+ </details>  
