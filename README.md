@@ -367,24 +367,12 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130422152-0f866063-b6af-4b2e-83af-d6482527e50c.png)
  * DDOS prevention >Create a rate-based web ACL rule using AWS WAF and associate it with Amazon CloudFront.
  * Autoscale cooldown period = 300sec
-
- </details>  
-   
-<details>
-  <summary>Default Auto Scaling Policy Flow</summary>
-  
+ * Oldest configured ec2 unless  
 ![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
-</details>
-  
- <details>
-    <summary>RDS Read Replicas</summary>
-    
+
+ * Read replicas
 ![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
- </details>
- 
- <details>
-    <summary>Proper Bastion Host Config</summary>
-    
+
+ * only from corporate ips to bastion in public subnet    
 ![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
- </details>
-  
+
