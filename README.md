@@ -298,6 +298,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 ## Resources
 <details>
     <summary>Expand</summary>
+  
 * [Tutorial Dojo Study Guide](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c02/?src=udemy)
 * [Notes Doc](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS%20Certified%20Solutions%20Architect.pdf)
 * [Great Medium Article on how to crack it](https://medium.com/javarevisited/top-5-aws-training-courses-to-crack-amazon-web-service-solutions-architect-associate-certification-3f4affa8f660)
@@ -328,6 +329,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 ## My Personal Cheat Sheet / Takeways
  <details>
     <summary>Expand</summary>
+   
  * whole vpc use nacl not sec group..sec group to instances
  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
  * elastic cache and dynamo db store session mgmt
