@@ -375,4 +375,4 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 
  * only from corporate ips to bastion in public subnet    
 ![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
-
+ </details>  
