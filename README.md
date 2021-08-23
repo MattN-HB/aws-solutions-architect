@@ -185,7 +185,7 @@ Management and Governance:
 * [Amazon CloudWatch](https://tutorialsdojo.com/amazon-cloudwatch/?src=udemy)
   ![image](https://user-images.githubusercontent.com/44328319/127785849-faf64975-c86b-4211-9598-e203bbfedba8.png)
 
-* AWS Config
+* [AWS Config](https://tutorialsdojo.com/aws-config/?src=udemy)
 * Amazon EventBridge (Amazon CloudWatch Events)
 * AWS Organizations
 * [AWS Resource Access Manager](https://aws.amazon.com/ram/)
@@ -363,9 +363,12 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130421808-1faf0869-2673-41e8-831d-c33cae24e877.png)
 
  * SQS 1min to 14 day retention with 120K standard queue limit and 20k fifo
+ * DLM and backups for auto snapshots
  * RDS Failover happens CNAME points to the standby instance
    ![image](https://user-images.githubusercontent.com/44328319/130422152-0f866063-b6af-4b2e-83af-d6482527e50c.png)
+   
  * DDOS prevention >Create a rate-based web ACL rule using AWS WAF and associate it with Amazon CloudFront.
+ * cross site scripting and sql injection enabled in waf
  * Autoscale cooldown period = 300sec
  * Oldest configured ec2 unless  
 ![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
@@ -375,4 +378,10 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 
  * only from corporate ips to bastion in public subnet    
 ![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
+   
+ * VPC public subnet to VPC direct connected how to connect...
+   ![image](https://user-images.githubusercontent.com/44328319/130428655-55684d2a-b610-45b4-9b16-2626be491af8.png)
+
+ * Decouple services with swf and sqs
+   
  </details>  
