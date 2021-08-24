@@ -163,6 +163,8 @@ Compute:
 
 * [Amazon Elastic Kubernetes Service (Amazon EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
 * [Elastic Load Balancing](https://tutorialsdojo.com/aws-elastic-load-balancing-elb/) (e.g. [comparison](https://tutorialsdojo.com/application-load-balancer-vs-network-load-balancer-vs-classic-load-balancer/)
+  ![image](https://user-images.githubusercontent.com/44328319/130552242-0f10992e-9e83-4dc3-a4e6-c27cbf7ba1aa.png)
+
 * AWS Fargate
 * [AWS Lambda](https://tutorialsdojo.com/aws-lambda/?src=udemy)
 
@@ -344,6 +346,10 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * S3 transfer acceleration = fastest transfer
  * EMR = big data
  * Route53 geopromixity for user location
+   ![image](https://user-images.githubusercontent.com/44328319/130551946-882a42c5-90a2-4844-b93c-301f7aebeb46.png)
+   ![image](https://user-images.githubusercontent.com/44328319/130551988-9f5de612-2957-450e-b35d-319d9fbe5148.png)
+   ![image](https://user-images.githubusercontent.com/44328319/130552025-b5a11c02-951c-41c7-9fec-604e8e4667d9.png)
+
  * S3 web hosting cheaper
  * ssd = small  (I/O /Throughput keyword ="frequent")
    ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
@@ -352,6 +358,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
  * A and AAAA = route53 aliases to alb
  * Nlb can assign eip not alb
+   ![image](https://user-images.githubusercontent.com/44328319/130552183-41a03540-6677-40a5-bb19-87fc065c4ffd.png)
+
  * "Open source" container = EKS
  * aws storage gateway = small data transfer and caching
  * aws datasyc = large data transfer
