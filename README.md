@@ -379,7 +379,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * when bandwith slow and need 250TB use snowball. As a rule of thumb, if it takes more than one week to upload your data to AWS using the spare capacity of your existing Internet connection, then you should consider using Snowball. For example, if you have a 100 Mb connection that you can solely dedicate to transferring your data and need to transfer 100 TB of data, it takes more than 100 days to complete data transfer over that connection. You can make the same transfer by using multiple Snowballs in about a week.
    ![image](https://user-images.githubusercontent.com/44328319/130420000-d648c685-377a-4dfe-bb64-90a81c91b00e.png)
 
- * dynamo issues check shard due to dyanmo autoscales
+ * dynamo issues check shard due to **dynamo autoscales automatically UNLESS created by CLI**
    ![image](https://user-images.githubusercontent.com/44328319/130420964-5cbb29a8-1840-4fc0-b5ba-f1adfb381cf7.png)
  * dynamo = scalable and key-value
    ![image](https://user-images.githubusercontent.com/44328319/130421808-1faf0869-2673-41e8-831d-c33cae24e877.png)
