@@ -348,9 +348,10 @@ Power-Access --policy-document { "Statement":[{ "Effect":
   ![image](https://user-images.githubusercontent.com/44328319/130572090-ebce8256-0b31-4d28-acec-3df97bd4f44a.png)
   ![image](https://user-images.githubusercontent.com/44328319/130578145-9e496d21-793f-4f2c-ae4c-2611ff3fc441.png)
 
- * Subnets: Below are the important points you have to remember about subnets: - Each subnet maps to a single Availability Zone. - Every subnet that you create is automatically associated with the main route table for the VPC.
-
-- If a subnet's traffic is routed to an Internet gateway, the subnet is known as a public subnet.
+ * Subnets: Below are the important points you have to remember about subnets:
+   * Each subnet maps to a single Availability Zone. 
+   * Every subnet that you create is automatically associated with the main route table for the VPC.
+   * If a subnet's traffic is routed to an Internet gateway, the subnet is known as a public subnet.
  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
  * You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region.
  * ec2 billing by state:
@@ -367,7 +368,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * EMR = big data / analyze
  * Route 53 failover (active active = majority) Two types of failover configurations
    * Active-Active Failover – all the records that have the same name, the same type, and the same routing policy are active unless Route 53 considers them unhealthy. Use this failover configuration when you want all of your resources to be available the majority of the time.
-   *Active-Passive Failover – use this failover configuration when you want a primary resource or group of resources to be available the majority of the time and you want a secondary resource or group of resources to be on standby in case all the primary resources become unavailable. When responding to queries, Route 53 includes only the healthy primary resources.
+   * Active-Passive Failover – use this failover configuration when you want a primary resource or group of resources to be available the majority of the time and you want a secondary resource or group of resources to be on standby in case all the primary resources become unavailable. When responding to queries, Route 53 includes only the healthy primary resources.
  * Route53 geopromixity for user location
    ![image](https://user-images.githubusercontent.com/44328319/130551946-882a42c5-90a2-4844-b93c-301f7aebeb46.png)
    ![image](https://user-images.githubusercontent.com/44328319/130551988-9f5de612-2957-450e-b35d-319d9fbe5148.png)
