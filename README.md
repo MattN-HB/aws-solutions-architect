@@ -205,6 +205,7 @@ Migration and Transfer:
   ![image](https://user-images.githubusercontent.com/44328319/130419974-915fbb09-cce1-4f1a-a1d5-4eb64bc0ba3a.png)
 
 * AWS Transfer Family
+![image](https://user-images.githubusercontent.com/44328319/130579687-c0b43543-7493-4e67-b419-5e189eb58e27.png)
 
 Networking and Content Delivery:
 * [Amazon API Gateway](https://tutorialsdojo.com/amazon-api-gateway/?src=udemy) and [FAQ Throttling Limits](https://aws.amazon.com/api-gateway/faqs/#Throttling_and_Caching)
@@ -244,10 +245,15 @@ Storage:
 * [Amazon Elastic File System (Amazon EFS)](https://tutorialsdojo.com/amazon-efs/?src=udemy)
 * [Amazon FSx](https://tutorialsdojo.com/amazon-fsx/?src=udemy)
 * [Amazon S3](https://aws.amazon.com/s3/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-s3/?src=udemy) and [s3 transfer acceleration](https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html)
+  ![image](https://user-images.githubusercontent.com/44328319/130579086-5f87e888-4227-4e4c-b090-2523bd6edca0.png)
+  ![image](https://user-images.githubusercontent.com/44328319/130578771-54dc60ae-d06c-4309-82e6-2e40fc30022e.png)
+
 * [Amazon S3 Glacier](https://aws.amazon.com/s3/storage-classes/)
   ![image](https://user-images.githubusercontent.com/44328319/130414197-0611c541-118b-445f-8cd9-68b9af6789a2.png)
 
-* AWS Storage Gateway
+* [AWS Storage Gateway](https://tutorialsdojo.com/aws-storage-gateway/?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/130579234-e03492e2-4318-4c25-9773-1727b922de5a.png)
+
 </details>
 
 ## CLI Helpful Commands
@@ -305,7 +311,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 <details>
     <summary>Expand</summary>
   
-* [Tutorial Dojo Study Guide](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c02/?src=udemy)
+* [Tutorial Dojo Study Guide](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c02/?src=udemy) and [Cheat Sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
 * [Notes Doc](https://github.com/MattN-HB/aws-solutions-architect/blob/main/AWS%20Certified%20Solutions%20Architect.pdf)
 * [Great Medium Article on how to crack it](https://medium.com/javarevisited/top-5-aws-training-courses-to-crack-amazon-web-service-solutions-architect-associate-certification-3f4affa8f660)
 * [AWS Whitepapers](http://aws.amazon.com/whitepapers/)
@@ -338,8 +344,10 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    
  * whole vpc use nacl not sec group..sec group to instances
    ![image](https://user-images.githubusercontent.com/44328319/130420204-178bb2e1-c8af-4751-bcc1-1f457a2a9d9b.png)
- * NACL default open but if you restrict you'll need set ephermal ports
+ * NACL default open but if you restrict you'll need set ephermal ports. Remember if meets rule first it be followed!
   ![image](https://user-images.githubusercontent.com/44328319/130572090-ebce8256-0b31-4d28-acec-3df97bd4f44a.png)
+  ![image](https://user-images.githubusercontent.com/44328319/130578145-9e496d21-793f-4f2c-ae4c-2611ff3fc441.png)
+
  * Subnets: Below are the important points you have to remember about subnets: - Each subnet maps to a single Availability Zone. - Every subnet that you create is automatically associated with the main route table for the VPC.
 
 - If a subnet's traffic is routed to an Internet gateway, the subnet is known as a public subnet.
@@ -352,8 +360,10 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * elastic cache and dynamo db store session mgmt
  * ElastiCache improves the performance of your database through **caching query results.**
  * iam role plus ad connector (when in doubt IAM is your friend)
- * Cookies (keep url) and signed URL if don't mind diff url.
- * S3 transfer acceleration = fastest transfer
+ * Cookies (keep url) and signed URL if don't mind diff url. If don't want use s3 links use cookies and Restrict access to files in the origin by creating an origin access identity (OAI) and give it permission to read the files in the bucket.
+ * S3 transfer acceleration 
+   ![image](https://user-images.githubusercontent.com/44328319/130580704-08e1f0cd-3b5e-478d-a190-c5ca1bafd01f.png)
+
  * EMR = big data / analyze
  * Route 53 failover (active active = majority) Two types of failover configurations
    * Active-Active Failover – all the records that have the same name, the same type, and the same routing policy are active unless Route 53 considers them unhealthy. Use this failover configuration when you want all of your resources to be available the majority of the time.
@@ -374,7 +384,9 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130552183-41a03540-6677-40a5-bb19-87fc065c4ffd.png)
 
  * "Open source" container = EKS
- * aws storage gateway = small data transfer and caching
+ * aws storage gateway = small data transfer and **caching**
+   ![image](https://user-images.githubusercontent.com/44328319/130579498-de043d5c-7949-4c5c-9435-b4dcfb1e790c.png)
+
  * aws datasyc = large data transfer
  * when bandwith slow and need 250TB use snowball. As a rule of thumb, if it takes more than one week to upload your data to AWS using the spare capacity of your existing Internet connection, then you should consider using Snowball. For example, if you have a 100 Mb connection that you can solely dedicate to transferring your data and need to transfer 100 TB of data, it takes more than 100 days to complete data transfer over that connection. You can make the same transfer by using multiple Snowballs in about a week.
    ![image](https://user-images.githubusercontent.com/44328319/130420000-d648c685-377a-4dfe-bb64-90a81c91b00e.png)
@@ -385,13 +397,14 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130421808-1faf0869-2673-41e8-831d-c33cae24e877.png)
 
  * SQS 1min to 14 day retention with 120K standard queue limit and 20k fifo
+ * Only FIFO queues can preserve the order of messages and not standard queues. FIFO provides exact one delivery. Standard at least once.
  * DLM and backups for auto snapshots
  * RDS Failover happens CNAME points to the standby instance
    ![image](https://user-images.githubusercontent.com/44328319/130422152-0f866063-b6af-4b2e-83af-d6482527e50c.png)
    
  * DDOS prevention >Create a rate-based web ACL rule using AWS WAF and associate it with Amazon CloudFront.
  * cross site scripting and sql injection enabled in waf
- * Autoscale cooldown period = 300sec
+ * Autoscale cooldown period = 300sec and new launch config only for changing AMI (target groups choose what instances)
  * Oldest configured ec2 unless  
 ![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
 
@@ -409,5 +422,6 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * Decouple services with swf and sqs
  * Cloud formation: Use the **CreationPolicy attribute when you want to wait on resource** configuration actions before stack creation proceeds.
  * Redshift = bigdata and business intelligence analytics
+ * Amazon Kinesis Data Firehose is the easiest way to load streaming data into data stores and analytics tools (e.g. splunk, elk,s3)
    
  </details>  
