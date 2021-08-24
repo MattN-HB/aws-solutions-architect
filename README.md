@@ -175,7 +175,7 @@ Database:
 
 * [Amazon ElastiCache](https://tutorialsdojo.com/amazon-elasticache/?src=udemy)
 * [Amazon RDS](https://aws.amazon.com/rds/faqs/?ep=sec&sec=assoc_saa) and [cheat sheet](https://tutorialsdojo.com/amazon-relational-database-service-amazon-rds/?src=udemy)
-* Amazon Redshift
+* [Amazon Redshift](https://tutorialsdojo.com/amazon-redshift/?src=udemy)
 
 Management and Governance:
 * [AWS Auto Scaling](https://tutorialsdojo.com/aws-auto-scaling/?src=udemy) and [FAQ Target Tracking Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
@@ -338,23 +338,36 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    
  * whole vpc use nacl not sec group..sec group to instances
    ![image](https://user-images.githubusercontent.com/44328319/130420204-178bb2e1-c8af-4751-bcc1-1f457a2a9d9b.png)
+ * NACL default open but if you restrict you'll need set ephermal ports
+  ![image](https://user-images.githubusercontent.com/44328319/130572090-ebce8256-0b31-4d28-acec-3df97bd4f44a.png)
+ * Subnets: Below are the important points you have to remember about subnets: - Each subnet maps to a single Availability Zone. - Every subnet that you create is automatically associated with the main route table for the VPC.
 
+- If a subnet's traffic is routed to an Internet gateway, the subnet is known as a public subnet.
  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
+ * You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region.
+ * ec2 billing by state:
+   ![image](https://user-images.githubusercontent.com/44328319/130574527-822b56e4-390f-48ba-ad14-c4b765923095.png)
+   ![image](https://user-images.githubusercontent.com/44328319/130574324-4a7cf0e4-dd15-4812-bb77-bfe4960a3efa.png)
+
  * elastic cache and dynamo db store session mgmt
+ * ElastiCache improves the performance of your database through **caching query results.**
  * iam role plus ad connector (when in doubt IAM is your friend)
  * Cookies (keep url) and signed URL if don't mind diff url.
  * S3 transfer acceleration = fastest transfer
- * EMR = big data
+ * EMR = big data / analyze
+ * Route 53 failover (active active = majority) Two types of failover configurations
+   * Active-Active Failover – all the records that have the same name, the same type, and the same routing policy are active unless Route 53 considers them unhealthy. Use this failover configuration when you want all of your resources to be available the majority of the time.
+   *Active-Passive Failover – use this failover configuration when you want a primary resource or group of resources to be available the majority of the time and you want a secondary resource or group of resources to be on standby in case all the primary resources become unavailable. When responding to queries, Route 53 includes only the healthy primary resources.
  * Route53 geopromixity for user location
    ![image](https://user-images.githubusercontent.com/44328319/130551946-882a42c5-90a2-4844-b93c-301f7aebeb46.png)
    ![image](https://user-images.githubusercontent.com/44328319/130551988-9f5de612-2957-450e-b35d-319d9fbe5148.png)
    ![image](https://user-images.githubusercontent.com/44328319/130552025-b5a11c02-951c-41c7-9fec-604e8e4667d9.png)
 
  * S3 web hosting cheaper
- * ssd = small  (I/O /Throughput keyword ="frequent")
+ * s3 **Expedited retrievals** allow you to quickly access your data when occasional urgent requests and **Provisioned capacity** ensures that your retrieval capacity for expedited retrievals 
+ * ssd = small,IOPS while HDD = Throughput, large sequential
    ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
 
- * hdd = large sequential
  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
  * A and AAAA = route53 aliases to alb
  * Nlb can assign eip not alb
@@ -384,6 +397,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 
  * Read replicas
 ![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
+![image](https://user-images.githubusercontent.com/44328319/130573417-d51f08c9-8704-4745-93e0-27bda15bc2d6.png)
+
 
  * only from corporate ips to bastion in public subnet    
 ![image](https://user-images.githubusercontent.com/44328319/130413393-9dd1cb98-e642-43a7-851e-864f1a0e5e88.png)
@@ -392,5 +407,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130428655-55684d2a-b610-45b4-9b16-2626be491af8.png)
 
  * Decouple services with swf and sqs
+ * Cloud formation: Use the **CreationPolicy attribute when you want to wait on resource** configuration actions before stack creation proceeds.
+ * Redshift = bigdata and business intelligence analytics
    
  </details>  
