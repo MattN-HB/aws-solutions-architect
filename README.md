@@ -301,6 +301,7 @@ Storage:
 * List all of your instances that are currently running
 `aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[].[InstanceId,State,PublicIpAddress, Tags[?Key==`Name`].Value]' --region us-east-1 --output json | jq `
 `aws ec2 describe-instances --filters Name=instance-state-name,Values=running --region us-east-1 --output table`
+*start ec2 instances `aws ec2 start-instances --instance-ids <your instance id>`
 * Other ways to pass input parameters to the AWS CLI with JSON 
 `aws iam put-user-policy --user-name AWS-Cli-Test --policy-name 
 Power-Access --policy-document { "Statement":[{ "Effect": 
