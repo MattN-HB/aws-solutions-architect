@@ -351,6 +351,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * hdd = large sequential
  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
  * A and AAAA = route53 aliases to alb
+ * Nlb can assign eip not alb
  * "Open source" container = EKS
  * aws storage gateway = small data transfer and caching
  * aws datasyc = large data transfer
