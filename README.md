@@ -384,6 +384,9 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 
  * S3 web hosting cheaper
  * s3 **Expedited retrievals** allow you to quickly access your data when occasional urgent requests and **Provisioned capacity** ensures that your retrieval capacity for expedited retrievals 
+ * Know the cost One Zone IA cheaper than IA
+   ![image](https://user-images.githubusercontent.com/44328319/130752630-91c00c51-d0f7-4c44-9180-5d53b5cbac23.png)
+
  * ssd = small,IOPS while HDD = Throughput, large sequential
    ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
    ![image](https://user-images.githubusercontent.com/44328319/130751351-4dd79262-29b2-4175-b2a4-f72d39193214.png)
@@ -418,12 +421,14 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * DDOS prevention >Create a rate-based web ACL rule using AWS WAF and associate it with Amazon CloudFront.
  * cross site scripting and sql injection enabled in waf
  * Autoscale cooldown period = 300sec and new launch config only for changing AMI (target groups choose what instances)
- * Oldest configured ec2 unless  
+ * Oldest configured ec2 unless  and autoscaling configs **CAN"T be modified**
 ![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
 
  * Read replicas
 ![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
 ![image](https://user-images.githubusercontent.com/44328319/130573417-d51f08c9-8704-4745-93e0-27bda15bc2d6.png)
+![image](https://user-images.githubusercontent.com/44328319/130753088-4beb1c66-15b4-44b6-ae3c-3563aa406e51.png)
+
 
 
  * only from corporate ips to bastion in public subnet    
@@ -438,6 +443,21 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * Amazon Kinesis Data Firehose is the easiest way to load streaming data into data stores and analytics tools (e.g. splunk, elk,s3)
  * 3 AZ for fault tolerance will trick 
    ![image](https://user-images.githubusercontent.com/44328319/130750853-41824611-07b1-4d0f-8b07-8ca5695a1c55.png)
+ * Cloud watch metrics 
+   ![image](https://user-images.githubusercontent.com/44328319/130751818-e4eb11d3-92ba-4cbe-8aa6-ebe09b5c17fd.png)
+* Cloud watch agent more efficient than using SSM agent
+* RDS Enhanced Metrics
+   ![image](https://user-images.githubusercontent.com/44328319/130752145-38808cc6-ffbd-44ee-9c6e-88f0c5f42f93.png)
+   
+ * cert manager and cert store only ones store cas
+   ![image](https://user-images.githubusercontent.com/44328319/130753478-69fbb4c1-b11b-4c21-8950-bd61dcab89b3.png)
+* RAID 0 to improve storage volme service
+   ![image](https://user-images.githubusercontent.com/44328319/130753800-eb119c32-b45a-4993-9a50-baeab0732c4b.png)
+* SSE KMS = AUDIT TRAIL
+   ![image](https://user-images.githubusercontent.com/44328319/130754276-5713c21f-452b-422f-a620-c9d6ee64842f.png)
+
+
+
 
    
  </details>  
