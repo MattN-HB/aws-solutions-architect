@@ -7,12 +7,15 @@ This repo is a guide to taking solutions architect associate cert in 2021. The m
 * These amazing [study guides/cheat sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
 
 ## Scoring
+<details>
+  <summary>Domain 2: Expand</summary>
 * 100 - 1000 with minimum 720
 * scaled scoring model
 * 15 unscored questions that do not affect your score
 * Unanswered questions are scored as incorrect; there is no penalty for guessing
 * Multiple-choice: Has one correct response and three incorrect responses (distractors).
 * Multiple-response: Has two or more correct responses out of five or more options
+</details>
 
 ## Domain Breakdown 
 <details>
@@ -306,7 +309,8 @@ Storage:
 `aws iam put-user-policy --user-name AWS-Cli-Test --policy-name 
 Power-Access --policy-document { "Statement":[{ "Effect": 
 "Allow" , "NotAction":"iam:*", "Resource": "*"} ] }`
-*When backups complete send to sns topic `aws backup put-backup-vault-notifications --endpoint-url https://backup.eu-west-1.amazonaws.com --backup-vault-name examplevault --sns-topic-arn arn:aws:sns:eu-west-1:111111111111:exampletopic --backup-vault-events BACKUP_JOB_COMPLETED`
+* When backups complete send to sns topic `aws backup put-backup-vault-notifications --endpoint-url https://backup.eu-west-1.amazonaws.com --backup-vault-name examplevault --sns-topic-arn arn:aws:sns:eu-west-1:111111111111:exampletopic --backup-vault-events BACKUP_JOB_COMPLETED`
+* Get backups notifications `aws backup get-backup-vault-notifications --backup-vault-name examplevault`
 </details>
   
 ## Resources
