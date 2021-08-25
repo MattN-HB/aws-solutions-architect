@@ -428,7 +428,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130428655-55684d2a-b610-45b4-9b16-2626be491af8.png)
 
  * Decouple services with swf and sqs
- * Cloud formation: Use the **CreationPolicy attribute when you want to wait on resource** configuration actions before stack creation proceeds.
+ * Cloud formation: Use the **CreationPolicy attribute when you want to wait on resource** configuration actions before stack creation proceeds. Using `cfn-signal` to point to resource
  * Redshift = bigdata and business intelligence analytics
  * Amazon Kinesis Data Firehose is the easiest way to load streaming data into data stores and analytics tools (e.g. splunk, elk,s3)
    
