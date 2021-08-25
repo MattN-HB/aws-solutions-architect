@@ -359,6 +359,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    * Each subnet maps to a single Availability Zone. 
    * Every subnet that you create is automatically associated with the main route table for the VPC.
    * If a subnet's traffic is routed to an Internet gateway, the subnet is known as a public subnet.
+   ![image](https://user-images.githubusercontent.com/44328319/130755979-fcae8ae2-0f29-4c05-9c0a-bf263a7ffb00.png)
+
  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
  * You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region. Periodically = spot instance
  * ec2 billing by state:
@@ -386,7 +388,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * s3 **Expedited retrievals** allow you to quickly access your data when occasional urgent requests and **Provisioned capacity** ensures that your retrieval capacity for expedited retrievals 
  * Know the cost One Zone IA cheaper than IA
    ![image](https://user-images.githubusercontent.com/44328319/130752630-91c00c51-d0f7-4c44-9180-5d53b5cbac23.png)
-
+   ![image](https://user-images.githubusercontent.com/44328319/130756233-fe6e7a1d-3243-401f-b043-5ed55dd6bf58.png)
+ * An Amazon S3 Glacier **(Glacier) vault** can have one resource-based **vault access policy** and one Vault Lock policy attached to it. A Vault Lock policy is a vault access policy that you can lock. Using a Vault Lock policy can help you enforce regulatory and compliance requirements. 
  * ssd = small,IOPS while HDD = Throughput, large sequential
    ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
    ![image](https://user-images.githubusercontent.com/44328319/130751351-4dd79262-29b2-4175-b2a4-f72d39193214.png)
@@ -455,6 +458,12 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130753800-eb119c32-b45a-4993-9a50-baeab0732c4b.png)
 * SSE KMS = AUDIT TRAIL
    ![image](https://user-images.githubusercontent.com/44328319/130754276-5713c21f-452b-422f-a620-c9d6ee64842f.png)
+* Cloudtrail needs = Enable server access logging for all required Amazon S3 buckets
+* X-Ray  to **trace and analyze user requests as they travel through your Amazon API Gateway APIs** to the underlying services. 
+* An **Elastic Fabric Adapter (EFA)** is a network device that you can attach to your Amazon EC2 instance to **accelerate High Performance Computing (HPC)** and machine learning applications. EFA enables you to achieve the application performance of an on-premises HPC cluster, with the scalability, flexibility, and elasticity provided by the AWS Cloud.
+* **CloudFront **it doesn't have the capability to route the traffic to the closest edge location via an **Anycast static IP address**.
+* **AWS Transit Gateway** is a service that enables customers to connect their Amazon Virtual Private Clouds (VPCs) and their **on-premises networks to a single gateway**. As you grow the number of workloads running on AWS, you need to be able to scale your networks across multiple accounts and Amazon VPCs to keep up with the growth.
+   
 
 
 
