@@ -360,7 +360,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    * Every subnet that you create is automatically associated with the main route table for the VPC.
    * If a subnet's traffic is routed to an Internet gateway, the subnet is known as a public subnet.
  * Create an Auto Scaling group of EC2 instances and set the minimum capacity to 4 and the maximum capacity to 6. Deploy 2 instances in Availability Zone A and another 2 instances in Availability Zone B.
- * You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region.
+ * You are limited to running On-Demand Instances per your vCPU-based On-Demand Instance limit, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic Spot limit per region. Periodically = spot instance
  * ec2 billing by state:
    ![image](https://user-images.githubusercontent.com/44328319/130574527-822b56e4-390f-48ba-ad14-c4b765923095.png)
    ![image](https://user-images.githubusercontent.com/44328319/130574324-4a7cf0e4-dd15-4812-bb77-bfe4960a3efa.png)
@@ -368,6 +368,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * elastic cache and dynamo db store session mgmt
  * ElastiCache improves the performance of your database through **caching query results.**
  * iam role plus ad connector (when in doubt IAM is your friend)
+ * identity store is n**ot compatible with SAML 2.0** then you can build a custom identity broker application using **STS**
  * Cookies (keep url) and signed URL if don't mind diff url. If don't want use s3 links use cookies and Restrict access to files in the origin by creating an origin access identity (OAI) and give it permission to read the files in the bucket.
  * S3 transfer acceleration 
    ![image](https://user-images.githubusercontent.com/44328319/130580704-08e1f0cd-3b5e-478d-a190-c5ca1bafd01f.png)
@@ -385,6 +386,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * s3 **Expedited retrievals** allow you to quickly access your data when occasional urgent requests and **Provisioned capacity** ensures that your retrieval capacity for expedited retrievals 
  * ssd = small,IOPS while HDD = Throughput, large sequential
    ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
+   ![image](https://user-images.githubusercontent.com/44328319/130751351-4dd79262-29b2-4175-b2a4-f72d39193214.png)
+
 
  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
  * A and AAAA = route53 aliases to alb
@@ -405,7 +408,9 @@ Power-Access --policy-document { "Statement":[{ "Effect":
    ![image](https://user-images.githubusercontent.com/44328319/130421808-1faf0869-2673-41e8-831d-c33cae24e877.png)
 
  * SQS 1min to 14 day retention with 120K standard queue limit and 20k fifo
- * Only FIFO queues can preserve the order of messages and not standard queues. FIFO provides exact one delivery. Standard at least once.
+ * Only FIFO queues can preserve the order of messages and not standard queues. FIFO provides exact one delivery. Standard at least once. Know when use SWF
+   ![image](https://user-images.githubusercontent.com/44328319/130750513-cf9d727a-d48f-4956-8a85-7d03ebebc3da.png)
+
  * DLM and backups for auto snapshots
  * RDS Failover happens CNAME points to the standby instance
    ![image](https://user-images.githubusercontent.com/44328319/130422152-0f866063-b6af-4b2e-83af-d6482527e50c.png)
@@ -431,5 +436,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * Cloud formation: Use the **CreationPolicy attribute when you want to wait on resource** configuration actions before stack creation proceeds. Using `cfn-signal` to point to resource
  * Redshift = bigdata and business intelligence analytics
  * Amazon Kinesis Data Firehose is the easiest way to load streaming data into data stores and analytics tools (e.g. splunk, elk,s3)
+ * 3 AZ for fault tolerance will trick 
+   ![image](https://user-images.githubusercontent.com/44328319/130750853-41824611-07b1-4d0f-8b07-8ca5695a1c55.png)
+
    
  </details>  
