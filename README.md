@@ -9,6 +9,7 @@ This repo is a guide to taking solutions architect associate cert in 2021. The m
 ## Scoring
 <details>
   <summary>Expand</summary>
+  
 * 100 - 1000 with minimum 720
 * scaled scoring model
 * 15 unscored questions that do not affect your score
