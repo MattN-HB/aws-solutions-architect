@@ -300,6 +300,7 @@ Storage:
 * Move S3 bucket to a different location 
 `aws s3 sync s3://oldbucket s3://newbucket --source-region us-west-l 
 --region us-west-2`
+* sync files from local but exlude some directories and .pem `aws s3 sync <YOURLOCALPATH> s3://mischb --exclude 'scripts/*' --exclude '*.pem'`
 * List users by ARN 
 `aws iam list-users --output json | jq -r .Users[].Arn`
 * List all of your instances that are currently running
