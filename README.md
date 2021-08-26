@@ -376,6 +376,8 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * Cookies (keep url) and signed URL if don't mind diff url. If don't want use s3 links use cookies and Restrict access to files in the origin by creating an origin access identity (OAI) and give it permission to read the files in the bucket.
  * S3 transfer acceleration 
    ![image](https://user-images.githubusercontent.com/44328319/130580704-08e1f0cd-3b5e-478d-a190-c5ca1bafd01f.png)
+   ![image](https://user-images.githubusercontent.com/44328319/130961269-5119f155-8726-4bf4-830d-5ad22d49125b.png)
+
 
  * EMR = big data / analyze
  * Route 53 failover (active active = majority) Two types of failover configurations
