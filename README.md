@@ -146,6 +146,8 @@ Analytics:
 * [Amazon EMR](https://tutorialsdojo.com/amazon-emr/?src=udemy)
 * AWS Glue
 * [Amazon Kinesis](https://tutorialsdojo.com/amazon-kinesis/?src=udemy)
+  ![image](https://user-images.githubusercontent.com/44328319/131294164-8ef02e7f-5e39-49ca-bb0c-3505f1691c35.png)
+
 * Amazon QuickSight
 
 AWS Billing and Cost Management:
@@ -184,7 +186,7 @@ Database:
 Management and Governance:
 * [AWS Auto Scaling](https://tutorialsdojo.com/aws-auto-scaling/?src=udemy) and [FAQ Target Tracking Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
 * AWS Backup
-* AWS CloudFormation
+* [AWS CloudFormation](https://tutorialsdojo.com/aws-cloudformation/?src=udemy)
 * [AWS CloudTrail](https://tutorialsdojo.com/aws-cloudtrail/?src=udemy)
   ![image](https://user-images.githubusercontent.com/44328319/130357361-712e8fad-f7e7-4f09-a179-e6ad97dba862.png)
 
@@ -202,6 +204,7 @@ Migration and Transfer:
 * AWS Database Migration Service (AWS DMS)
 * [AWS DataSync](https://tutorialsdojo.com/aws-datasync/?src=udemy)
   ![image](https://user-images.githubusercontent.com/44328319/130419012-827b1989-9e43-4c6d-b38b-5ad9687d959b.png)
+  ![image](https://user-images.githubusercontent.com/44328319/131296691-1feb7428-29a3-4084-ae82-58ede0d5beae.png)
 
 * AWS Migration Hub
 * AWS Server Migration Service (AWS SMS)
@@ -372,6 +375,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * elastic cache and dynamo db store session mgmt
  * ElastiCache improves the performance of your database through **caching query results.**
  * iam role plus ad connector (when in doubt IAM is your friend)
+ * IAM roles are global so need need create new ones
  * identity store is n**ot compatible with SAML 2.0** then you can build a custom identity broker application using **STS**
  * Cookies (keep url) and signed URL if don't mind diff url. If don't want use s3 links use cookies and Restrict access to files in the origin by creating an origin access identity (OAI) and give it permission to read the files in the bucket.
  * S3 transfer acceleration 
@@ -390,10 +394,19 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 
  * S3 web hosting cheaper
  * s3 **Expedited retrievals** allow you to quickly access your data when occasional urgent requests and **Provisioned capacity** ensures that your retrieval capacity for expedited retrievals 
- * Know the cost One Zone IA cheaper than IA
+ * Know the cost One Zone IA cheaper than IA and intelligent tiering more expensive then IA
    ![image](https://user-images.githubusercontent.com/44328319/130752630-91c00c51-d0f7-4c44-9180-5d53b5cbac23.png)
    ![image](https://user-images.githubusercontent.com/44328319/130756233-fe6e7a1d-3243-401f-b043-5ed55dd6bf58.png)
+   ![image](https://user-images.githubusercontent.com/44328319/131295523-11e41eed-567d-42b9-8931-a30410cde826.png)
+
  * An Amazon S3 Glacier **(Glacier) vault** can have one resource-based **vault access policy** and one Vault Lock policy attached to it. A Vault Lock policy is a vault access policy that you can lock. Using a Vault Lock policy can help you enforce regulatory and compliance requirements. 
+ * Bulk retrievals are S3 Glacier’s lowest-cost retrieval option, enabling you to retrieve large amounts, even petabytes, of data within **5 – 12 hours**. You can specify an absolute or relative time period (including 0 days) after which the specified Amazon S3 objects should be transitioned to Amazon Glacier.
+ * When you create an encrypted EBS volume and attach it to a supported instance type, the following types of data are encrypted:
+   * Data at rest inside the volume
+   * All data moving between the volume and the instance
+   * All snapshots created from the volume
+   * All volumes created from those snapshots
+   
  * ssd = small,IOPS while HDD = Throughput, large sequential
    ![image](https://user-images.githubusercontent.com/44328319/130420548-3572f331-f1d4-497d-99a0-14f68f93babc.png)
    ![image](https://user-images.githubusercontent.com/44328319/130751351-4dd79262-29b2-4175-b2a4-f72d39193214.png)
@@ -401,14 +414,18 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 
  * parameter store ecs + doesn't by default rotate keys. Secrets manager if enabled rotates keys.
  * A and AAAA = route53 aliases to alb
+ * Access logging is an optional feature of Elastic Load Balancing that is disabled by default.
  * Nlb can assign eip not alb
    ![image](https://user-images.githubusercontent.com/44328319/130552183-41a03540-6677-40a5-bb19-87fc065c4ffd.png)
 
  * "Open source" container = EKS
  * aws storage gateway = small data transfer and **caching**
    ![image](https://user-images.githubusercontent.com/44328319/130579498-de043d5c-7949-4c5c-9435-b4dcfb1e790c.png)
+ * AWS Storage Gateway storage solutions, only file gateway can store and retrieve objects in Amazon S3 using the protocols **NFS and SMB**.
 
  * aws datasyc = large data transfer
+   ![image](https://user-images.githubusercontent.com/44328319/131296739-e9543e54-41ea-4e4b-be08-32b11761b284.png)
+
  * when bandwith slow and need 250TB use snowball. As a rule of thumb, if it takes more than one week to upload your data to AWS using the spare capacity of your existing Internet connection, then you should consider using Snowball. For example, if you have a 100 Mb connection that you can solely dedicate to transferring your data and need to transfer 100 TB of data, it takes more than 100 days to complete data transfer over that connection. You can make the same transfer by using multiple Snowballs in about a week.
    ![image](https://user-images.githubusercontent.com/44328319/130420000-d648c685-377a-4dfe-bb64-90a81c91b00e.png)
 
@@ -428,9 +445,17 @@ Power-Access --policy-document { "Statement":[{ "Effect":
  * DDOS prevention >Create a rate-based web ACL rule using AWS WAF and associate it with Amazon CloudFront.
  * cross site scripting and sql injection enabled in waf
  * Autoscale cooldown period = 300sec and new launch config only for changing AMI (target groups choose what instances)
+   
  * Oldest configured ec2 unless  and autoscaling configs **CAN"T be modified**
 ![image](https://user-images.githubusercontent.com/44328319/127865099-7c4f5f58-7883-4ca6-ba14-f7e33b75370d.png)
+![image](https://user-images.githubusercontent.com/44328319/131289525-a993c59e-363a-4e5d-a2e2-214ef67331a7.png)
+![image](https://user-images.githubusercontent.com/44328319/131298089-faa84f15-250a-47ca-9839-efd243223c1e.png)
 
+ 
+ * Type of **Scaling** policies in Autoscaling (note: the fourth nonscaling is scheduling)
+   ![image](https://user-images.githubusercontent.com/44328319/131291090-6b1f398e-7893-4efe-84bb-e0c8e101a392.png)
+
+   
  * Read replicas
 ![image](https://user-images.githubusercontent.com/44328319/128017372-39a557c5-c26d-4933-b63e-903f01494bce.png)
 ![image](https://user-images.githubusercontent.com/44328319/130573417-d51f08c9-8704-4745-93e0-27bda15bc2d6.png)
@@ -463,10 +488,19 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 * SSE KMS = AUDIT TRAIL
    ![image](https://user-images.githubusercontent.com/44328319/130754276-5713c21f-452b-422f-a620-c9d6ee64842f.png)
 * Cloudtrail needs = Enable server access logging for all required Amazon S3 buckets
+* **By default, CloudTrail event log files are encrypted **using Amazon S3 server-side encryption (SSE).
 * X-Ray  to **trace and analyze user requests as they travel through your Amazon API Gateway APIs** to the underlying services. 
 * An **Elastic Fabric Adapter (EFA)** is a network device that you can attach to your Amazon EC2 instance to **accelerate High Performance Computing (HPC)** and machine learning applications. EFA enables you to achieve the application performance of an on-premises HPC cluster, with the scalability, flexibility, and elasticity provided by the AWS Cloud.
+  * Elastic Network Adapter (ENA). It supports network speeds of up to 100 Gbps for supported instance types. Elastic Network Adapters (ENAs) provide traditional IP networking features that are required to support VPC networking.
+  * An Elastic Fabric Adapter (EFA) is simply an Elastic Network Adapter (ENA) with added capabilities. It provides all of the functionality of an ENA, with additional OS-bypass functionality. OS-bypass is an access model that allows HPC and machine learning applications to communicate directly with the network interface hardware to provide low-latency, reliable transport functionality.
+  * The OS-bypass capabilities of **EFAs are not supported on Windows instances.** If you attach an EFA to a Windows instance, the instance functions as an Elastic Network Adapter, without the added EFA capabilities.
 * **CloudFront **it doesn't have the capability to route the traffic to the closest edge location via an **Anycast static IP address**.
 * **AWS Transit Gateway** is a service that enables customers to connect their Amazon Virtual Private Clouds (VPCs) and their **on-premises networks to a single gateway**. As you grow the number of workloads running on AWS, you need to be able to scale your networks across multiple accounts and Amazon VPCs to keep up with the growth.
+ ![image](https://user-images.githubusercontent.com/44328319/131293442-477e818e-41f9-4cb3-b444-5173de90d240.png)
+
+* **VPC endpoints are region-specific only** and do not support inter-region communication. When set up Re-configure the route table’s target and destination of the instances’ subnet.
+* Data migration tool for heterogeneous migrations a two step process. First use the **AWS Schema Conversion Tool** to convert the source schema and code to match that of the target database, and then use the AWS Database Migration Service to migrate data from the source database to the target database. All the required data type conversions will automatically be done by the AWS Database Migration Service during the migration.
+* AWS Glue is a fully managed extract, transform, and load **(ETL) service** that makes it easy for customers to prepare and load their data for analytics. You can create and run an ETL job with a few clicks in the AWS Management Console.
    
 
 
