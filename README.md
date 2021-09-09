@@ -5,6 +5,7 @@ This repo is a guide to taking solutions architect associate cert in 2021. The m
 * [acloudguru hands on course](https://acloudguru.com/course/aws-certified-solutions-architect-associate-saa-c02)
 * These amazing [practice exams with explanations](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02/)
 * These amazing [study guides/cheat sheets](https://tutorialsdojo.com/aws-cheat-sheets/)
+* Last practice exam took was the acloud guru practice exam SAA-CO2
 
 ## Scoring
 <details>
