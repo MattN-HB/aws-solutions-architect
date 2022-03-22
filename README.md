@@ -319,7 +319,7 @@ Power-Access --policy-document { "Statement":[{ "Effect":
 * When backups complete send to sns topic `aws backup put-backup-vault-notifications --endpoint-url https://backup.eu-west-1.amazonaws.com --backup-vault-name examplevault --sns-topic-arn arn:aws:sns:eu-west-1:111111111111:exampletopic --backup-vault-events BACKUP_JOB_COMPLETED`
 * Get backups notifications `aws backup get-backup-vault-notifications --backup-vault-name examplevault`
 * Assume into role `aws sts assume-role --role-arn arn:aws:iam::<accountnumber>:role/<rolename> --role-session-name readcross --profile <name>`
-* Describe instance types aws ec2 describe-instance-types --query 'sort_by(InstanceTypes, &InstanceType)[].InstanceType' --profile <name> --region us-east-1
+* Describe instance types `aws ec2 describe-instance-types --query 'sort_by(InstanceTypes, &InstanceType)[].InstanceType' --profile <name> --region us-east-1`
 * Describe AMIs `aws ec2 describe-images --owners self --output json --profile <name> --region us-east-1 | jq .Images[].ImageId`
 </details>
   
